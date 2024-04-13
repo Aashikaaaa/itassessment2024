@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Padding</title>
+<style>
+    .image-container {
+        padding: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="image4.png" alt="Image 4">
+    </div>
+</body>
+</html>
+Replace "image4.png" with the actual path to your image file. This code sets a padding of 50 pixels around the image inside the div with the class image-container, effectively creating a space of 50 pixels horizontally and vertically around the image.
+
+
+
+
+User
+only use html no css
+
+ChatGPT
+If you want to achieve the spacing using only HTML, you can use the style attribute directly on the img tag to add inline styling. Here's how you can do it:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Padding</title>
+</head>
+<body>
+    <img src="image4.png" alt="Image 4" style="padding: 50px;">
+</body>
+</html>
+This code adds a padding of 50 pixels around the image using inline styling on the img tag itself, achieving the desired spacing without the use of external CSS.
+
+
+
+
+User
+Name of Bus Place Destination
+
+Time
+
+Fare
+Arrival Departure
+
+Western Express Kathmandu Nepalgunj 07:30 08:00 Rs. 989.00
+Mankamana Bus Sewa Kathmandu Manakamana 09:00 10:15 Rs. 450.00
+Buddha Express Kathmandu Butwal 11:30 12:25 Rs. 645.05
+Baba Tourist Express Kathmandu Pokahar 7:30 8:00 Rs. 756.00
+Purba Express Kathmandu Biratnagar 16:00 17:30 Rs. 345.00
+create a table using html
+
+ChatGPT
+You can create a table in HTML to display the bus schedule information like this:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bus Schedule</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Bus Schedule</caption>
+        <thead>
+            <tr>
+                <th>Name of Bus</th>
+                <th>Place Destination</th>
+                <th>Time</th>
+                <th>Fare</th>
+                <th>Arrival</th>
+                <th>Departure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Western Express</td>
+                <td>Kathmandu to Nepalgunj</td>
+                <td>07:30 - 08:00</td>
+                <td>Rs. 989.00</td>
+                <td>07:30</td>
+                <td>08:00</td>
+            </tr>
+            <tr>
+                <td>Mankamana Bus Sewa</td>
+                <td>Kathmandu to Manakamana</td>
+                <td>09:00 - 10:15</td>
+                <td>Rs. 450.00</td>
+                <td>09:00</td>
+                <td>10:15</td>
+            </tr>
+            <tr>
+                <td>Buddha Express</td>
+                <td>Kathmandu to Butwal</td>
+                <td>11:30 - 12:25</td>
+                <td>Rs. 645.05</td>
+                <td>11:30</td>
+                <td>12:25</td>
+            </tr>
+            <tr>
+                <td>Baba Tourist Express</td>
+                <td>Kathmandu to Pokhara</td>
+                <td>07:30 - 08:00</td>
+                <td>Rs. 756.00</td>
+                <td>07:30</td>
+                <td>08:00</td>
+            </tr>
+            <tr>
+                <td>Purba Express</td>
+                <td>Kathmandu to Biratnagar</td>
+                <td>16:00 - 17:30</td>
+                <td>Rs. 345.00</td>
+                <td>16:00</td>
+                <td>17:30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

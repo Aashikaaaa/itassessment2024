@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+          section{
+           font-family: 'Arial', sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color:rgb(247, 245, 245);
+           padding-left: 20px;
+           padding-right:20px ;
+           padding-bottom:20px ;
+           padding-top:20px ;
+           border-radius: 10px solid;
+           border-color: rgb(10, 10, 10);
+           border: solid;
+           margin-top: 50px;
+           background-color: #fff;
+           padding: 20px;
+           margin-bottom: 40px;
+           margin-left: 5px;
+           
+           
+        }
+        .bt {
+               background-color: white;
+               color: #fff;
+               padding: 10px;
+               border-radius: 4px;
+               cursor: pointer;
+           }
+        label {
+               margin-bottom: 8px;
+           }
+       #form {
+            display: flex;
+           flex-direction: column;
+        }
+        .tt {
+               margin-bottom: 16px;
+               padding: 10px;
+               border: 2px solid black;
+               border-radius: 4px;
+           }
+        #email{
+            border: 2px solid black;
+               border-radius: 4px;
+           }
+       
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <div class="company-name">
+            <a href="../index.html"><h2>Jane Kitties Cosmetics</h2></a> 
+        </div>
+        <div class="MenuItems">
+            
+            <li><a href="#shopping"><span class="material-symbols-outlined"> shopping_bag </span></a></li>
+            <li><a href="#person"><span class="material-symbols-outlined"> person </span></a></li>
+            <li><a href="#search"><span class="material-symbols-outlined"> search </span></a></li>
+            <li><a href="#search"><span class="material-symbols-outlined"> favorite </span></a> </li>
+         </div>
+         <div class="creator">
+            <a href="../index.html"><p> Aashika Thapa</p></a>
+         </div>
+         <div class="options">
+            <nav>
+                <li><a class="art" href="../Pages/About.html"> About </a></li>
+                <li><a class="art" href="../Pages/Product.html"> Products </a></li>
+                <li><a class="art" href="../Pages/Gallery.html"> Gallery </a></li>
+                <li><a class="art" href="../Pages/Discovery.html"> Discovery </a></li>
+                <li><a class="art" href="../Pages/Contact.html"> Contact </a></li>
+            </nav>
+
+         </div>
+    <section class="feeding-form">
+        <h2>Share Your Opinions</h2>
+        <p>Contribute to our feeding program by filling out the form below:</p>
+
+        <form id="form" action="/" method="post" onsubmit="validate()">
+            <label for="username">username:</label>
+            <input class="tt" type="text" id="username" name="name" required>
+
+            <label for="email">Email:</label>
+            <input class="tt" type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea class="tt"  id="message" name="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="bt">Submit</button>
+        </form>
+        <script>
+            function validate(){
+                var uname=document.forms["form"]["username"].value;
+                var email=document.forms["form"]["email"].value;
+                var message=document.forms["form"]["message"].value;
+	
+    
+                if(uname==""||email==""||message==""){
+                    alert("Fields are empty");
+                }
+                else{
+                    alert("You have successfully reached us");
+                }
+    
+            }
+            </script>
+    </section>
+
+    <div class="footer">
+        <div class="signup-form">
+            <p>Sign up:</p>
+            <form action="/submit-email" method="post">
+                <input type="email" name="email" placeholder="Email address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com"><img src="../images/instagram.jpg" width="50px" height="50px"></a>
+            <a href="https://www.facebook.com"><img src="../images/facebook.jpg" width="50px" height="50px"></a>
+            <a href="https://twitter.com/?lang=en"><img src="../images/twitter.png" width="50px" height="50px"></a>
+            <a href="https://www.tiktok.com/en/"><img src="../images/tiktok.png" width="50px" height="50px"></a>
+        </div>
+        <div class="navigation">
+            <nav>
+                <li><a class="art" href="../Pages/Contact.html"> Contact us </a></li>
+                <li><a class="art" href="https://newwindow.html" target="_blank"> Faq </a></li>
+                <li><a class="art" href="https://newwindow.html" target="_blank"> Shipping </a></li>
+                <li><a class="art" href="https://newwindow.html" target="_blank"> Order Tracking </a></li>
+                <li><a class="art" href="https://mail.google.com/mail/u/0/#inbox"> Email </a></li>
+                </nav>
+        </div>
+        <p class="copyright"><span>&copy</span>2024 Jane Kitties Cosmetics</p>
+    </div>
+    
+    
+</body>
+</html>
